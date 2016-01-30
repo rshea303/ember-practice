@@ -8,9 +8,9 @@
     <div>
       <ul>
         {{#each model as |notebook|}}
-          <!-- {{#link-to 'notebooks.notes' notebook.id}} -->
+          {{#link-to 'notebooks.notes' notebook.id}}
             <li>{{notebook.title}}</li>
-          <!-- {{/link-to}} -->
+          {{/link-to}}
         {{else}}
           <div>No notebooks found</div>
         {{/each}}
